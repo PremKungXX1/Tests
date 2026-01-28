@@ -1,1 +1,0 @@
-print("kuy rai isus")
