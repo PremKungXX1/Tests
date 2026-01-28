@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | Blog preview card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Yellow_1: "hsl(47, 88%, 63%)"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex justify-center items-center bg-Yellow_1">
+  <div class="flex flex-col justify-between bg-white min-h-[470px] max-w-[350px] w-full border-black border-[1px] rounded-[16px] p-[14px] shadow-[5px_5px]">
+    <div class="overflow-hidden rounded-[12px] h-48">
+      <img class="w-full h-full object-cover " src="./assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="font-bold bg-Yellow_1 w-fit p-[6px] rounded-[6px] text-[12px]">Learning</div>
+    <div>Published 21 Dec 2023</div>
+    <div class="font-bold text-[24px]">HTML & CSS foundations</div>
+    <div class="text-gray-500">These languages are the backbone of every website. defining structure content and presentation.</div>
+    <div class="flex items-center gap-[10px]">
+      <div class="h-[40px] w-[40px] rounded-full overflow-hidden">
+        <img class="object-cover" src="./assets/images/image-avatar.webp" alt="">
+      </div>
+      <div class="font-bold text-[16px]">Greg Hooper</div>
+    </div>
+  </div>
+</body>
+</html>
